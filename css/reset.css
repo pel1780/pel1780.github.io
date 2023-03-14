@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+    color: inherit;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+em,
+address {
+    font-style: normal;
+}
+
+p {
+    line-height: 1.4;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
+    /* font-family: 'TheJamsil5Bold'; */
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}

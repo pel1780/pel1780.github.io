@@ -1,0 +1,11 @@
+@import url(./reset.css);
+
+@import url(./font.css);
+
+.inner {
+    display: flex;
+    width: 1600px;
+    min-height: 400px;
+    gap: 100px;
+    margin: 0 auto;
+}
