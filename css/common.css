@@ -1,0 +1,25 @@
+@import url(./reset.css);
+
+@import url(./font.css);
+
+.inner {
+    width: 1600px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.btn_o {
+    background: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.serif {
+    font-family: 'Noto serif KR', serif;
+}
