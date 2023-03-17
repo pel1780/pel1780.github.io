@@ -166,7 +166,7 @@
 /* header */
 section {
     background: #fff url(../img/3.svg);
-    color: #a0522d;
+    color: #343434;
 }
 
 .mainVisual {
@@ -202,39 +202,206 @@ section {
 }
 
 /* main visual */
-.pfBanyan .inner {
-    background: #fff;
-    box-shadow: 24px 10px #BA8369;
+.portfolio .inner {
+    gap: 30px;
 }
 
-.pfBanyan .inner>* {
-    height: 600px;
-}
-
-.pfBanyan .inner .desc_case {
-    width: 500px;
-}
-
-.pfBanyan .inner .tab_case {
+.portfolio .inner>* {
     position: relative;
-    width: 1100px;
+    height: 650px;
 }
 
-.pfBanyan .inner .tab_case .tab_menu {
+.portfolio .inner .desc_case {
+    width: 440px;
+    padding: 30px 0;
+}
+
+.portfolio .inner .desc_case em {
+    display: block;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #a0522d;
+}
+
+.portfolio .inner .desc_case h2 {
+    position: relative;
+    font-size: 44px;
+    font-weight: 500;
+    margin-bottom: 70px;
+    color: #703519;
+}
+
+.portfolio .inner .desc_case h2::before {
+    content: "";
     position: absolute;
-    inset: 0 5px auto auto;
+    inset: 60% 0 -2px 0;
+    width: 0;
+    background: rgba(186, 131, 105, 0.6);
+    transform: skewX(-10deg);
+    z-index: -1;
+    transition: 0.5s 0.2s;
+}
+
+.portfolio.on .inner .desc_case h2::before {
+    width: 100%;
+}
+
+.portfolio .inner .desc_case .tit {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 28px;
+    font-weight: 300;
+    font-style: oblique;
+}
+
+.portfolio .inner .desc_case .des {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+.portfolio .desc_case .color_list {
+    gap: 10px;
+}
+
+.portfolio .desc_case .color_list li {
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+}
+
+.portfolio .desc_case button {
+    background: #BA8369;
+    border: 2px solid transparent;
+    color: #fff;
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+.portfolio .desc_case button:hover {
+    background: #fff;
+    border-color: #BA8369;
+    color: #a0522d;
+}
+
+.portfolio .desc_case button a {
+    display: block;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.portfolio .inner .tab_case {
+    width: 970px;
+}
+
+.portfolio .inner .tab_case .tab_menu {
+    position: absolute;
+    inset: 0 0 auto auto;
     transform: translate(0, -100%);
     gap: 1px;
 }
 
-.pfBanyan .inner .tab_case .tab_menu li {
+.portfolio .inner .tab_case .tab_menu li {
     background: #BA8369;
     color: #fff;
-    padding: 5px 20px;
-    border-radius: 5px 5px 0 0;
+    font-weight: 100;
+    font-size: 20px;
+    border-radius: 7px 7px 0 0;
 }
 
-.pfBanyan .inner .tab_case .tab_con {
+.portfolio .inner .tab_case .tab_menu li.on {
+    background: #fff;
+    color: #a0522d;
+    font-weight: 300;
+    border: 1px solid #BA8369;
+    border-bottom: none;
+}
+
+.portfolio .inner .tab_case .tab_menu li button {
+    padding: 5px 30px;
+}
+
+.portfolio .inner .tab_case .tab_con {
     overflow: hidden;
     height: 100%;
+    box-shadow: 24px 10px #BA8369;
+}
+
+.portfolio .inner .tab_case .tab_con li {
+    display: none;
+}
+
+.portfolio .inner .tab_case .tab_con li.on {
+    display: block;
+}
+
+.portfolio .inner .tab_case .tab_con .web img {
+    transition: 5s linear;
+}
+
+.portfolio .inner .tab_case .tab_con .web:hover img {
+    transform: translate(0, calc(-100% + 651px));
+}
+
+/*  */
+.pfBanyan .desc_case .color_list .list01 {
+    background: #ad9560;
+}
+
+.pfBanyan .desc_case .color_list .list02 {
+    background: #082b26;
+}
+
+.pfBanyan .desc_case .color_list .list03 {
+    background: #444444;
+}
+
+/*  */
+.pfThem .desc_case .color_list .list01 {
+    background: #e0bd76;
+}
+
+.pfThem .desc_case .color_list .list02 {
+    background: #343434;
+}
+
+.pfThem .desc_case .color_list .list03 {
+    background: #222222;
+}
+
+/*  */
+.pfRerave .desc_case .color_list .list01 {
+    background: #ffffff;
+}
+
+.pfRerave .desc_case .color_list .list02 {
+    background: #dddddd;
+}
+
+.pfRerave .desc_case .color_list .list03 {
+    background: #343434;
+}
+
+/*  */
+.pfBando .desc_case .color_list .list01 {
+    background: #002f7b;
+}
+
+.pfBando .desc_case .color_list .list02 {
+    background: #151a59;
+}
+
+.pfBando .desc_case .color_list .list03 {
+    background: #131c32;
+}
+
+/* port folio */
+
+.contact {
+    background: #BA8369;
+    color: #fff;
 }

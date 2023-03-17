@@ -1,7 +1,6 @@
 $(function () {
     var pageOption = {
         navigation: {
-            'textColor': '#a0522d',
             'bulletsColor': CSS,
         },
         menu: '.gnb ul',
@@ -12,12 +11,23 @@ $(function () {
             $('#pp-nav').addClass('on');
         },
         onLeave: function (index, nextIndex, direction) {
-            console.log(index, nextIndex)
+            $('.section').eq(nextIndex - 1).find('.tab_case .tab_con li').eq(0).addClass('on');
+            $('.section').eq(nextIndex - 1).find('.tab_case .tab_menu li').eq(0).addClass('on');
 
+            $('.tab_case .tab_menu li button').on('click', function () {
+                var idx = $(this).parent().index();
+                console.log(idx);
+
+                $('.section').eq(nextIndex - 1).find('.tab_case .tab_con li').removeClass('on');
+                $('.section').eq(nextIndex - 1).find('.tab_case .tab_con li').eq(idx).addClass('on');
+
+                $(this).parent().addClass('on').siblings().removeClass('on');
+            })
         },
         afterLoad: function (anchorLink, index) {
             console.log(index)
-            if (index < 2) {
+            $('.section').eq(index - 1).addClass('on').siblings().removeClass('on');
+            if (index < 2 || index > 5) {
                 $('.header').addClass('on');
                 $('#pp-nav').addClass('on');
             } else {
@@ -46,4 +56,6 @@ $(function () {
         $('.bar_case').removeClass('on');
         $('.gnb').removeClass('on');
     })
+    // header
+
 })
