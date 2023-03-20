@@ -11,21 +11,27 @@ $(function () {
             $('#pp-nav').addClass('on');
         },
         onLeave: function (index, nextIndex, direction) {
-            $('.section').eq(nextIndex - 1).find('.tab_case .tab_con li').eq(0).addClass('on');
-            $('.section').eq(nextIndex - 1).find('.tab_case .tab_menu li').eq(0).addClass('on');
+            setTimeout(function () {
+                $('.section').eq(nextIndex - 2).find('.tab_case .tab_con>li').removeClass('on');
+                $('.section').eq(nextIndex).find('.tab_case .tab_con>li').removeClass('on');
 
-            $('.tab_case .tab_menu li button').on('click', function () {
+                $('.section').eq(nextIndex - 2).find('.tab_case .tab_menu>li').removeClass('on');
+                $('.section').eq(nextIndex).find('.tab_case .tab_menu>li').removeClass('on');
+            }, 1000)
+
+            $('.section').eq(nextIndex - 1).find('.tab_case .tab_con>li').eq(0).addClass('on');
+            $('.section').eq(nextIndex - 1).find('.tab_case .tab_menu>li').eq(0).addClass('on');
+
+            $('.tab_case .tab_menu>li button').on('click', function () {
                 var idx = $(this).parent().index();
-                console.log(idx);
 
-                $('.section').eq(nextIndex - 1).find('.tab_case .tab_con li').removeClass('on');
-                $('.section').eq(nextIndex - 1).find('.tab_case .tab_con li').eq(idx).addClass('on');
+                $('.section').eq(nextIndex - 1).find('.tab_case .tab_con>li').removeClass('on');
+                $('.section').eq(nextIndex - 1).find('.tab_case .tab_con>li').eq(idx).addClass('on');
 
                 $(this).parent().addClass('on').siblings().removeClass('on');
             })
         },
         afterLoad: function (anchorLink, index) {
-            console.log(index)
             $('.section').eq(index - 1).addClass('on').siblings().removeClass('on');
             if (index < 2 || index > 5) {
                 $('.header').addClass('on');
@@ -57,5 +63,4 @@ $(function () {
         $('.gnb').removeClass('on');
     })
     // header
-
 })
