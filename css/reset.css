@@ -23,6 +23,7 @@ address {
 
 p {
     line-height: 1.4;
+    word-break: keep-all;
 }
 
 body {

@@ -63,4 +63,18 @@ $(function () {
         $('.gnb').removeClass('on');
     })
     // header
+    function bgColor() {
+        var color =
+            ['#ad9560', '#082b26', '#444444',
+                '#e0bd76', '#343434', '#222222',
+                '#ffffff', '#dddddd', '#343434',
+                '#002f7b', '#151a59', '#131c32'
+            ];
+        var bgList = $('.desc_case .color_list li');
+        for (i = 0; i < bgList.length; i++) {
+            console.log(color[i]);
+            bgList[i].style.background = color[i];
+        }
+    }
+    bgColor();
 })
