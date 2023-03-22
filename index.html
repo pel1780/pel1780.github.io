@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>portfolio</title>
+
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/jquery.pagepiling.css">
-    <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/portfolio.css">
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery.pagepiling.min.js"></script>
-    <script src="./js/slick.min.js"></script>
     <script src="./js/portfolio.js"></script>
+
+    <meta name="portfolio" content="웹퍼블리셔 김승하의 포트폴리오입니다">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="portfolio">
+    <meta property="og:description" content="웹퍼블리셔 김승하의 포트폴리오입니다">
+    <meta property="og:image" content="http://www.mysite.com/article/article1_featured_image.jpg">
+    <meta property="og:url" content="http://www.mysite.com/article/article1.html">
+
     <link rel="icon" href="./img/favicon.svg">
 </head>
 
@@ -22,8 +30,8 @@
     <div class="Wrap">
         <header class="header">
             <h1>
-                <a href="">
-                    <svg width="105" height="173" viewBox="0 0 105 173" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <a href="#intro">
+                    <svg width="50" height="173" viewBox="0 0 105 173" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M33.7 88V86.2H38.3L27 63L25.1 63.5V86.2H29.7V88H1V86.2H6.5V14.8H0.6V13H25.1V61.5L26.7 60.9L49.2 42.2H39.8V40.4H59.5V42.2H52.5L40.6 52.3L57.9 86.2H61.5V88H33.7Z"
                             fill="white" />
@@ -38,7 +46,7 @@
             </h1>
             <nav class="gnb flex">
                 <ul>
-                    <li data-menuanchor="main" class="active"><a href="#main">main</a></li>
+                    <li data-menuanchor="intro" class="active"><a href="#intro">main</a></li>
                     <li data-menuanchor="pf01"><a href="#pf01">portfolio : responsive</a></li>
                     <li data-menuanchor="pf02"><a href="#pf02">portfolio : responsive</a></li>
                     <li data-menuanchor="pf03"><a href="#pf03">portfolio : gnuboard</a></li>
@@ -51,14 +59,15 @@
             </div>
         </header>
         <main>
-            <div class="pullpageWrap">
+            <div class="fullpageWrap">
                 <section class="section mainVisual">
                     <div class="inner">
-                        <h2 class="serif">PortFolio</h2>
-                        <strong class="serif">By. Kim SeungHa</strong>
-                        <figure>
-                            <img src="./img/mainVisual.jpg" alt="">
-                        </figure>
+                        <h2>
+                            <svg width="940" height="203" viewBox="0 -60 940 10">
+                                <text>Irreplaceable</text>
+                            </svg>
+                        </h2>
+                        <!-- <strong class="serif">By. Kim SeungHa</strong> -->
                     </div>
                 </section>
                 <section class="section pfBanyan portfolio">
@@ -78,8 +87,8 @@
                                 <li>#082b26</li>
                                 <li>#444444</li>
                             </ul>
-                            <strong class="font_tit tit">FONT</strong>
-                            <p class="font_des des">'Noto Serif KR', serif</p>
+                            <strong class="font_tit tit">TOOLS</strong>
+                            <p class="font_des des">HTML5, CSS3, jQuery, slcik</p>
                             <button class="btn_o">
                                 <a href="https://pel1780.github.io/portfolio04" target="_blank">VIEW</a>
                             </button>
@@ -126,12 +135,12 @@
                             </p>
                             <strong class="color_tit tit">COLOR</strong>
                             <ul class="color_list des flex">
-                                <li class="list01">#e0bd76</li>
-                                <li class="list02">#343434</li>
-                                <li class="list03">#222222</li>
+                                <li>#e0bd76</li>
+                                <li>#343434</li>
+                                <li>#222222</li>
                             </ul>
-                            <strong class="font_tit tit">FONT</strong>
-                            <p class="font_des des">'Noto Sans KR', sans-serif</p>
+                            <strong class="font_tit tit">TOOLS</strong>
+                            <p class="font_des des">HTML5, CSS3, jQuery, slcik</p>
                             <button class="btn_o">
                                 <a href="https://pel1780.github.io/portfolio06" target="_blank">VIEW</a>
                             </button>
@@ -178,12 +187,12 @@
                             </p>
                             <strong class="color_tit tit">COLOR</strong>
                             <ul class="color_list des flex">
-                                <li class="list01">#ffffff</li>
-                                <li class="list02">#dddddd</li>
-                                <li class="list03">#343434</li>
+                                <li>#ffffff</li>
+                                <li>#dddddd</li>
+                                <li>#343434</li>
                             </ul>
-                            <strong class="font_tit tit">FONT</strong>
-                            <p class="font_des des">'Noto Sans KR', 'Noto Serif KR', sans-serif, serif</p>
+                            <strong class="font_tit tit">TOOLS</strong>
+                            <p class="font_des des">gnuBoard, HTML5, CSS3, jQuery, slcik</p>
                             <button class="btn_o">
                                 <a href="http://pel17800.dothome.co.kr" target="_blank">VIEW</a>
                             </button>
@@ -231,12 +240,12 @@
                             </p>
                             <strong class="color_tit tit">COLOR</strong>
                             <ul class="color_list des flex">
-                                <li class="list01">#002f7b</li>
-                                <li class="list02">#151a59</li>
-                                <li class="list03">#131c32</li>
+                                <li>#002f7b</li>
+                                <li>#151a59</li>
+                                <li>#131c32</li>
                             </ul>
-                            <strong class="font_tit tit">FONT</strong>
-                            <p class="font_des des">'Noto Sans KR', sans-serif</p>
+                            <strong class="font_tit tit">TOOLS</strong>
+                            <p class="font_des des">gnuBoard, HTML5, CSS3, jQuery, slcik</p>
                             <button class="btn_o">
                                 <a href="http://pel1780.dothome.co.kr/" target="_blank">VIEW</a>
                             </button>
@@ -286,7 +295,7 @@
             </div>
         </main>
         <footer class="footer">
-
+            &copy; Kim SeungHa 2023
         </footer>
     </div>
 </body>

@@ -52,7 +52,7 @@
 }
 
 .header .gnb ul {
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 100;
     font-style: oblique;
     line-height: 2;
@@ -180,15 +180,63 @@
     color: #fff;
 }
 
+.mainVisual::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 0 0;
+    background: #fff;
+    animation: opacity 5s linear forwards;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
 .mainVisual .inner {
     position: relative;
 }
 
 .mainVisual h2 {
     position: absolute;
-    font-size: 120px;
-    font-weight: 700;
-    z-index: 1;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+.mainVisual svg text {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 150px;
+    fill: transparent;
+    stroke: #a0522d;
+    stroke-dasharray: 590px;
+    stroke-dashoffset: 0;
+    animation: stroke 3s linear;
+    /* transition: 1s 3s; */
+}
+
+@keyframes stroke {
+    from {
+        stroke-dashoffset: 590px;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.mainVisual.on svg text {
+    fill: #fff;
+    stroke: transparent;
 }
 
 .mainVisual strong {
@@ -506,8 +554,8 @@
 }
 
 .contact h2 {
+    font-family: 'Abril Fatface', cursive;
     font-size: 150px;
-    font-weight: 700;
     color: #fdefe7;
 }
 
@@ -529,4 +577,17 @@
 
 .contact strong {
     font-size: 20px;
+}
+
+/*  */
+
+.footer {
+    position: absolute;
+    inset: auto auto 50px 50px;
+    z-index: 999;
+    color: #BA8369;
+}
+
+.footer.on {
+    color: #fdefe7;
 }

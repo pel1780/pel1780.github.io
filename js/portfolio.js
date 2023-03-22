@@ -4,11 +4,13 @@ $(function () {
             'bulletsColor': CSS,
         },
         menu: '.gnb ul',
-        anchors: ['main', 'pf01', 'pf02', 'pf03', 'pf04', 'contact'],
+        anchors: ['intro', 'pf01', 'pf02', 'pf03', 'pf04', 'contact'],
         direction: 'holizental',
         afterRender: function () {
             $('.header').addClass('on');
             $('#pp-nav').addClass('on');
+            $('.footer').addClass('on');
+            $('.mainVisual').addClass('on');
         },
         onLeave: function (index, nextIndex, direction) {
             setTimeout(function () {
@@ -36,14 +38,16 @@ $(function () {
             if (index < 2 || index > 5) {
                 $('.header').addClass('on');
                 $('#pp-nav').addClass('on');
+                $('.footer').addClass('on');
             } else {
                 $('.header').removeClass('on');
                 $('#pp-nav').removeClass('on');
+                $('.footer').removeClass('on');
             }
         },
     }
 
-    $('.pullpageWrap').pagepiling(pageOption);
+    $('.fullpageWrap').pagepiling(pageOption);
 
     $('.bar_case').on('click', function () {
         $(this).toggleClass('on');
