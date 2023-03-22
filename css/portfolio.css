@@ -221,7 +221,7 @@
     stroke-dasharray: 590px;
     stroke-dashoffset: 0;
     animation: stroke 3s linear;
-    /* transition: 1s 3s; */
+    transition: 1s 3s;
 }
 
 @keyframes stroke {
