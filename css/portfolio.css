@@ -1,3 +1,8 @@
+::selection {
+    background-color: rgba(186, 131, 105, 0.6);
+    color: #fff;
+}
+
 .header {
     position: fixed;
     inset: 0 0 auto 0;
