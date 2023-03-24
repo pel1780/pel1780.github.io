@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     inset: 0 0 auto 0;
-    z-index: 999;
+    z-index: 99;
 
     display: flex;
     justify-content: space-between;
@@ -93,6 +93,7 @@
     font-size: 20px;
     width: 90px;
     height: 30px;
+    cursor: pointer;
 }
 
 .header .bar_case::before,
@@ -178,7 +179,7 @@
 .animation {
     position: absolute;
     inset: 0 0 0 0;
-    z-index: 7;
+    z-index: 1000;
 
     display: flex;
     justify-content: center;
@@ -234,11 +235,6 @@
     text-align: center;
 }
 
-.mainVisual em {
-    display: block;
-    margin-bottom: 30px;
-}
-
 .mainVisual h2 {
     position: relative;
     font-size: 100px;
@@ -246,14 +242,25 @@
     margin-bottom: 30px;
 }
 
-.mainVisual h2::before {
+.mainVisual h2::before,
+.mainVisual h2::after {
     content: "";
     position: absolute;
-    inset: 0 0 auto 50%;
-    transform: translate(320px, -50%);
     background: url(../img/star.png)no-repeat center center/cover;
+}
+
+.mainVisual h2::before {
+    inset: 0 auto auto 50%;
+    transform: translate(320px, -50%);
     width: 50px;
     height: 50px;
+}
+
+.mainVisual h2::after {
+    inset: auto 50% 0 auto;
+    transform: translate(-320px, 50%);
+    width: 30px;
+    height: 30px;
 }
 
 .mainVisual .inner svg {
@@ -262,6 +269,7 @@
     transform: translate(-50%, -50%) rotate(-12deg);
     width: 720px;
     height: 200px;
+    z-index: -1;
 }
 
 .mainVisual .inner svg ellipse {
@@ -289,36 +297,30 @@
     }
 }
 
+.mainVisual strong {
+    display: block;
+    margin-bottom: 30px;
+}
+
 .mainVisual p {
     font-size: 20px;
     margin-bottom: 50px;
 }
 
-.mainVisual strong {
-    position: absolute;
-    inset: auto auto 100px 50%;
-    margin-left: 720px;
-    transform: translate(-100%, 0);
-}
-
 .mainVisual a {
     position: relative;
-    padding: 0 10px;
+    padding: 5px;
 }
 
-.mainVisual a::before {
+.mainVisual a::after {
     content: "";
     position: absolute;
-    inset: 60% 0 -2px 0;
-    width: 0;
-    background: rgba(0, 0, 0, 0.3);
+    inset: auto 0 0 0;
+    height: 1px;
+    background: #fff;
     transform: skewX(-10deg);
-    z-index: -1;
+    z-index: 0;
     transition: 0.5s 6s;
-}
-
-.mainVisual.on a::before {
-    width: 100%;
 }
 
 /* main visual */
@@ -650,7 +652,7 @@
 .footer {
     position: absolute;
     inset: auto auto 50px 50px;
-    z-index: 999;
+    z-index: 6;
     color: #BA8369;
 }
 
