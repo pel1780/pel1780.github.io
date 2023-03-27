@@ -27,11 +27,22 @@ $(function () {
             $('.tab_case .tab_menu>li button').on('click', function () {
                 var idx = $(this).parent().index();
 
-                $('.section').eq(nextIndex - 1).find('.tab_case .tab_con>li').removeClass('on');
+                $('.section .tab_case .tab_con>li').removeClass('on');
                 $('.section').eq(nextIndex - 1).find('.tab_case .tab_con>li').eq(idx).addClass('on');
 
                 $(this).parent().addClass('on').siblings().removeClass('on');
+                if ($('.tab_con .web').hasClass('on')) {
+                    img.css({ animation: `scrDown ${imgHeight / 500}s linear 1.2s forwards` });
+                } else if ($('.tab_con .mo').hasClass('on')) {
+                    imgNon.css({ animation: 'none' });
+                }
             })
+
+            var img = $('.section').eq(nextIndex - 1).find('.tab_case .tab_con .web img');
+            var imgNon = $('.section').eq(nextIndex - 1).siblings().find('.tab_case .tab_con .web img');
+            var imgHeight = img.height();
+            img.css({ animation: `scrDown ${imgHeight / 500}s linear 1.2s forwards` });
+            imgNon.css({ animation: 'none' });
         },
         afterLoad: function (anchorLink, index) {
             $('.section').eq(index - 1).addClass('on').siblings().removeClass('on');
@@ -76,7 +87,6 @@ $(function () {
             ];
         var bgList = $('.desc_case .color_list li');
         for (i = 0; i < bgList.length; i++) {
-            console.log(color[i]);
             bgList[i].style.background = color[i];
         }
     }

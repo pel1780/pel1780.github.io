@@ -10,7 +10,7 @@
 
     display: flex;
     justify-content: space-between;
-    padding: 30px 50px;
+    padding: 50px 50px 0 50px;
 
     color: #a0522d;
     transition: 0.5s;
@@ -345,12 +345,11 @@
 
 .portfolio .inner>* {
     position: relative;
-    height: 650px;
+    height: 600px;
 }
 
 .portfolio .inner .desc_case {
     width: 440px;
-    padding: 30px 0;
 }
 
 .portfolio .inner .desc_case em {
@@ -491,7 +490,7 @@
 
 .portfolio .inner .tab_case .tab_con .case {
     overflow: hidden;
-    height: 630px;
+    height: 580px;
     border: 5px solid #703519;
 }
 
@@ -500,13 +499,9 @@
     border: 10px solid #fdefe7;
 }
 
-.portfolio .inner .tab_case .tab_con .web.on img {
-    animation: scrDown 5s linear 1.2s 2 alternate;
-}
-
 @keyframes scrDown {
     to {
-        transform: translate(0, calc(-100% + 640px));
+        transform: translate(0, calc(-100% + 571px));
     }
 }
 
@@ -515,7 +510,7 @@
 }
 
 .portfolio .tab_con .mo .case {
-    padding: 100px 30px 0 30px;
+    padding: 30px 30px 0 30px;
 }
 
 .portfolio .tab_con .mo .logo {
