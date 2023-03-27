@@ -46,6 +46,7 @@
     transition: 0.5s;
     justify-content: center;
     align-items: center;
+    z-index: 900;
 }
 
 .header .gnb::before {
@@ -53,7 +54,7 @@
     position: absolute;
     inset: -10px -10px -10px -10px;
     background: url(../img/mainVisual.jpg) no-repeat center top/cover;
-    filter: blur(10px);
+    filter: blur(15px);
 }
 
 .header .gnb ul {
@@ -145,6 +146,10 @@
 
 .header .bar_case.on button::after {
     transform: translate(0, -50%) rotate(-45deg);
+}
+
+#pp-nav {
+    z-index: 10;
 }
 
 #pp-nav.right {
@@ -335,7 +340,7 @@
 }
 
 .portfolio .inner {
-    gap: 30px;
+    gap: 70px;
 }
 
 .portfolio .inner>* {
@@ -440,6 +445,7 @@
     inset: 0 15px auto auto;
     transform: translate(0, -100%);
     gap: 1px;
+    z-index: 6;
 }
 
 .portfolio .inner .tab_case .tab_menu li {
@@ -450,8 +456,17 @@
     border-radius: 7px 7px 0 0;
 }
 
+.portfolio .inner .tab_case .tab_menu li:nth-child(2) {
+    position: relative;
+    transform: translate(0, 10px);
+}
+
+.portfolio .inner .tab_case .tab_menu li:nth-child(2) button {
+    padding-bottom: 13px;
+}
+
 .portfolio .inner .tab_case .tab_menu li.on {
-    background: #fff;
+    background: #fdefe7;
     color: #a0522d;
     font-weight: 300;
     border: 1px solid #BA8369;
@@ -459,27 +474,30 @@
 }
 
 .portfolio .inner .tab_case .tab_menu li button {
-    padding: 5px 30px;
+    padding: 6px 30px 8px 30px;
 }
 
 .portfolio .inner .tab_case .tab_con {
-    overflow: hidden;
+    position: relative;
     height: 100%;
-    box-shadow: 24px 10px rgba(186, 131, 105, 0.6);
-    border: 10px solid #fdefe7;
-    border-radius: 10px;
 }
 
 .portfolio .inner .tab_case .tab_con>li {
-    display: none;
-    border: 5px solid #703519;
+    position: absolute;
+    border: 10px solid #BA8369;
+    border-radius: 10px;
     background: #fff;
+}
+
+.portfolio .inner .tab_case .tab_con .case {
     overflow: hidden;
     height: 630px;
+    border: 5px solid #703519;
 }
 
 .portfolio .inner .tab_case .tab_con>li.on {
-    display: block;
+    z-index: 99;
+    border: 10px solid #fdefe7;
 }
 
 .portfolio .inner .tab_case .tab_con .web.on img {
@@ -493,6 +511,10 @@
 }
 
 .portfolio .tab_con .mo {
+    transform: translate(10px, 10px);
+}
+
+.portfolio .tab_con .mo .case {
     padding: 100px 30px 0 30px;
 }
 
