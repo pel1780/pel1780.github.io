@@ -4,7 +4,7 @@ $(function () {
             'bulletsColor': CSS,
         },
         menu: '.gnb ul',
-        anchors: ['intro', 'pf01', 'pf02', 'pf03', 'pf04', 'contact'],
+        anchors: ['intro', 'pf01', 'pf02', 'pf03', 'pf04', 'pf05', 'contact'],
         direction: 'holizental',
         afterRender: function () {
             $('.header').addClass('on');
@@ -46,7 +46,7 @@ $(function () {
         },
         afterLoad: function (anchorLink, index) {
             $('.section').eq(index - 1).addClass('on').siblings().removeClass('on');
-            if (index < 2 || index > 5) {
+            if (index < 2 || index > 6) {
                 $('.header').addClass('on');
                 $('#pp-nav').addClass('on');
                 $('.footer').addClass('on');
@@ -78,17 +78,19 @@ $(function () {
         $('.gnb').removeClass('on');
     })
     // header
-    function bgColor() {
-        var color =
-            ['#ad9560', '#082b26', '#444444',
-                '#e0bd76', '#343434', '#222222',
-                '#ffffff', '#dddddd', '#343434',
-                '#002f7b', '#151a59', '#131c32'
-            ];
-        var bgList = $('.desc_case .color_list li');
-        for (i = 0; i < bgList.length; i++) {
-            bgList[i].style.background = color[i];
-        }
-    }
-    bgColor();
+    // function bgColor() {
+    //     var color =
+    //         [
+    //             '#002f7b', '#151a59', '#131c32',
+    //             '#002f7b', '#151a59', '#131c32',
+    //             '#ffffff', '#dddddd', '#343434',
+    //             '#ad9560', '#082b26', '#444444',
+    //             '#e0bd76', '#343434', '#222222',
+    //         ];
+    //     var bgList = $('.desc_case .color_list li');
+    //     for (i = 0; i < bgList.length; i++) {
+    //         bgList[i].style.background = color[i];
+    //     }
+    // }
+    // bgColor();
 })
