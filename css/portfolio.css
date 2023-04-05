@@ -53,20 +53,23 @@
     content: "";
     position: absolute;
     inset: -10px -10px -10px -10px;
-    background: url(../img/mainVisual.jpg) no-repeat center top/cover;
+    background: url(../img/mainVisual.jpg) no-repeat center top -250px/cover;
     filter: blur(15px);
 }
 
 .header .gnb ul {
     font-size: 30px;
     font-weight: 100;
-    font-style: oblique;
     line-height: 2;
     text-align: center;
 }
 
 .header .gnb ul li {
     position: relative;
+}
+
+.header .gnb ul li span {
+    font-size: 20px;
 }
 
 .header .gnb ul li::after {
