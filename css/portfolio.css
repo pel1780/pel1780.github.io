@@ -396,6 +396,7 @@
     font-weight: 300;
     margin-bottom: 40px;
     line-height: 1.4;
+    word-break: keep-all;
 }
 
 .portfolio .inner .desc_case .info_des span {
@@ -412,9 +413,16 @@
     margin-bottom: 10px;
 }
 
+.portfolio .desc_case .info_des li:not(.info) {
+    position: relative;
+    padding-left: 10px;
+}
+
 .portfolio .desc_case .info_des li:not(.info):before {
     content: "";
-    display: inline-block;
+    position: absolute;
+    inset: 12px auto auto 2px;
+    transform: translate(0, -50%);
     width: 3px;
     height: 3px;
     background: #555;
