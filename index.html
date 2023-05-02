@@ -1,405 +1,568 @@
 <!DOCTYPE html>
 <html lang="ko">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>portfolio</title>
 
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/jquery.pagepiling.css">
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/jquery.pagepiling.css" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
 
     <script src="./js/jquery-1.12.4.min.js"></script>
     <script src="./js/jquery.pagepiling.min.js"></script>
     <script src="./js/portfolio.js"></script>
 
-    <meta name="portfolio" content="웹퍼블리셔 김승하의 포트폴리오입니다">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="portfolio">
-    <meta property="og:description" content="웹퍼블리셔 김승하의 포트폴리오입니다">
-    <meta property="og:image" content="https://pel1780.github.io/img/preview.png">
-    <meta property="og:url" content="https://pel1780.github.io/">
+    <meta name="portfolio" content="웹퍼블리셔 김승하의 포트폴리오입니다" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="portfolio" />
+    <meta
+      property="og:description"
+      content="웹퍼블리셔 김승하의 포트폴리오입니다"
+    />
+    <meta
+      property="og:image"
+      content="https://pel1780.github.io/img/preview.png"
+    />
+    <meta property="og:url" content="https://pel1780.github.io/" />
 
-    <link rel="icon" href="./img/favicon.png">
-</head>
+    <link rel="icon" href="./img/favicon.png" />
+  </head>
 
-<body>
+  <body>
     <div class="Wrap">
-        <header class="header">
-            <h1>
-                <a href="#intro">
-                    <svg width="50" height="173" viewBox="0 0 105 173" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M33.7 88V86.2H38.3L27 63L25.1 63.5V86.2H29.7V88H1V86.2H6.5V14.8H0.6V13H25.1V61.5L26.7 60.9L49.2 42.2H39.8V40.4H59.5V42.2H52.5L40.6 52.3L57.9 86.2H61.5V88H33.7Z"
-                            fill="white" />
-                        <path
-                            d="M77.5 119.9C80.8333 119.9 83.7667 119 86.3 117.2C88.9 115.4 90.2 112.7 90.2 109.1C90.2 105.433 88.8 102.633 86 100.7C83.2667 98.7667 79.3333 97.1 74.2 95.7C69.1333 94.2333 65.4333 92.9667 63.1 91.9C60.8333 90.8333 58.6667 89.4333 56.6 87.7C52.4667 84.2333 50.4 78.8667 50.4 71.6C50.4 65.6667 52.5 60.5667 56.7 56.3C60.9667 52.0333 66.7667 49.9 74.1 49.9C77.6333 49.9 81.3 50.4333 85.1 51.5C88.9667 52.5 91.3667 53 92.3 53C93.2333 53 94.0667 52.3333 94.8 51H95.9L96.6 71.2H95C91.8 65.4 88.4333 60.7667 84.9 57.3C81.4333 53.7667 77.6333 52 73.5 52C69.4333 52 66.2667 52.9667 64 54.9C61.7333 56.7667 60.6 59.3 60.6 62.5C60.6 65.6333 61.9333 68.0667 64.6 69.8C67.3333 71.4667 70.6667 72.8333 74.6 73.9C78.5333 74.9667 81.1 75.7 82.3 76.1C83.5667 76.5 85.1 77.0667 86.9 77.8C88.7667 78.4667 90.2667 79.2 91.4 80C92.6 80.7333 93.8333 81.7 95.1 82.9C96.4333 84.0333 97.4667 85.3 98.2 86.7C100 89.9 100.9 93.7 100.9 98.1C100.9 105.3 98.6333 111.1 94.1 115.5C89.6333 119.833 83.7333 122 76.4 122C72.6 122 68.2333 121.5 63.3 120.5C58.4333 119.5 55.7333 119 55.2 119C54.2667 119 53.3667 120 52.5 122H51.1L50.1 98.2H51.8C54.7333 104 58.4667 109.067 63 113.4C67.6 117.733 72.4333 119.9 77.5 119.9Z"
-                            fill="white" />
-                        <path
-                            d="M15 86H39.1V122.6C40.1667 119.533 41.8 117.067 44 115.2C46.2 113.333 49.5333 112.4 54 112.4C64.3333 112.4 69.5 117.967 69.5 129.1V159.2H75.1V161H46.8V159.2H50.9V126.7C50.9 122.7 50.6333 120.133 50.1 119C49.5667 117.8 48.6 117.2 47.2 117.2C45.0667 117.2 43.1667 118.6 41.5 121.4C39.9 124.2 39.1 127.6 39.1 131.6V159.2H43.4V161H15V159.2H20.5V87.8H15V86Z"
-                            fill="white" />
-                    </svg>
-                </a>
-            </h1>
-            <nav class="gnb flex">
-                <ul>
-                    <li data-menuanchor="intro" class="active"><a href="#intro">INTRO</a></li>
-                    <li data-menuanchor="pf01"><a href="#pf01">Javin de Seoul : <span>REACT로 제작한 쇼핑몰</span></a></li>
-                    <li data-menuanchor="pf02"><a href="#pf02">Bando : <span>GNUBOARD를 활용한 멀티페이지</span></a></li>
-                    <li data-menuanchor="pf03"><a href="#pf03">Rerave : <span>GNUBOARD를 활용한 멀티페이지</span></a></li>
-                    <li data-menuanchor="pf04"><a href="#pf04">Banyantree Hotel : <span>반응형 브랜드 페이지</span></a></li>
-                    <li data-menuanchor="pf05"><a href="#pf05">The M Graphy : <span>반응형 브랜드 페이지</span></a></li>
-                    <li data-menuanchor="contact"><a href="#contact">contact</a></li>
+      <header class="header">
+        <h1>
+          <a href="#intro">
+            <svg
+              width="50"
+              height="173"
+              viewBox="0 0 105 173"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M33.7 88V86.2H38.3L27 63L25.1 63.5V86.2H29.7V88H1V86.2H6.5V14.8H0.6V13H25.1V61.5L26.7 60.9L49.2 42.2H39.8V40.4H59.5V42.2H52.5L40.6 52.3L57.9 86.2H61.5V88H33.7Z"
+                fill="white"
+              />
+              <path
+                d="M77.5 119.9C80.8333 119.9 83.7667 119 86.3 117.2C88.9 115.4 90.2 112.7 90.2 109.1C90.2 105.433 88.8 102.633 86 100.7C83.2667 98.7667 79.3333 97.1 74.2 95.7C69.1333 94.2333 65.4333 92.9667 63.1 91.9C60.8333 90.8333 58.6667 89.4333 56.6 87.7C52.4667 84.2333 50.4 78.8667 50.4 71.6C50.4 65.6667 52.5 60.5667 56.7 56.3C60.9667 52.0333 66.7667 49.9 74.1 49.9C77.6333 49.9 81.3 50.4333 85.1 51.5C88.9667 52.5 91.3667 53 92.3 53C93.2333 53 94.0667 52.3333 94.8 51H95.9L96.6 71.2H95C91.8 65.4 88.4333 60.7667 84.9 57.3C81.4333 53.7667 77.6333 52 73.5 52C69.4333 52 66.2667 52.9667 64 54.9C61.7333 56.7667 60.6 59.3 60.6 62.5C60.6 65.6333 61.9333 68.0667 64.6 69.8C67.3333 71.4667 70.6667 72.8333 74.6 73.9C78.5333 74.9667 81.1 75.7 82.3 76.1C83.5667 76.5 85.1 77.0667 86.9 77.8C88.7667 78.4667 90.2667 79.2 91.4 80C92.6 80.7333 93.8333 81.7 95.1 82.9C96.4333 84.0333 97.4667 85.3 98.2 86.7C100 89.9 100.9 93.7 100.9 98.1C100.9 105.3 98.6333 111.1 94.1 115.5C89.6333 119.833 83.7333 122 76.4 122C72.6 122 68.2333 121.5 63.3 120.5C58.4333 119.5 55.7333 119 55.2 119C54.2667 119 53.3667 120 52.5 122H51.1L50.1 98.2H51.8C54.7333 104 58.4667 109.067 63 113.4C67.6 117.733 72.4333 119.9 77.5 119.9Z"
+                fill="white"
+              />
+              <path
+                d="M15 86H39.1V122.6C40.1667 119.533 41.8 117.067 44 115.2C46.2 113.333 49.5333 112.4 54 112.4C64.3333 112.4 69.5 117.967 69.5 129.1V159.2H75.1V161H46.8V159.2H50.9V126.7C50.9 122.7 50.6333 120.133 50.1 119C49.5667 117.8 48.6 117.2 47.2 117.2C45.0667 117.2 43.1667 118.6 41.5 121.4C39.9 124.2 39.1 127.6 39.1 131.6V159.2H43.4V161H15V159.2H20.5V87.8H15V86Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </h1>
+        <nav class="gnb flex">
+          <ul>
+            <li data-menuanchor="intro" class="active">
+              <a href="#intro">INTRO</a>
+            </li>
+            <li data-menuanchor="pf01">
+              <a href="#pf01"
+                >Javin de Seoul : <span>REACT로 제작한 공공사이트</span></a
+              >
+            </li>
+            <li data-menuanchor="pf02">
+              <a href="#pf01"
+                >Javin de Seoul : <span>REACT로 제작한 쇼핑몰</span></a
+              >
+            </li>
+            <li data-menuanchor="pf03">
+              <a href="#pf02"
+                >Bando : <span>GNUBOARD를 활용한 멀티페이지</span></a
+              >
+            </li>
+            <li data-menuanchor="pf04">
+              <a href="#pf03"
+                >Rerave : <span>GNUBOARD를 활용한 멀티페이지</span></a
+              >
+            </li>
+            <li data-menuanchor="pf05">
+              <a href="#pf04"
+                >Banyantree Hotel : <span>반응형 브랜드 페이지</span></a
+              >
+            </li>
+            <li data-menuanchor="pf06">
+              <a href="#pf05"
+                >The M Graphy : <span>반응형 브랜드 페이지</span></a
+              >
+            </li>
+            <li data-menuanchor="contact"><a href="#contact">contact</a></li>
+          </ul>
+        </nav>
+        <div class="bar_case">
+          <button class="btn_o serif">menu</button>
+        </div>
+      </header>
+      <main>
+        <div class="fullpageWrap">
+          <div class="animation">
+            <svg width="940" height="203" viewBox="0 -60 940 10">
+              <text>Irreplaceable</text>
+            </svg>
+          </div>
+          <section class="section mainVisual">
+            <div class="inner serif">
+              <svg viewBox="0 190 720 20">
+                <ellipse cx="360" cy="200" rx="360" ry="100" />
+              </svg>
+              <h2>Irreplaceable</h2>
+              <strong>: 그 무엇으로도 대체[대신]할 수 없는</strong>
+              <p>그 무엇으로도 대체 할 수 없는 퍼블리셔 김승하가 되겠습니다.</p>
+              <a href="#pf01">next page</a>
+            </div>
+          </section>
+          <section class="section pfSights portfolio">
+            <div class="inner flex">
+              <div class="desc_case">
+                <h2 class="serif">Busan Sights Map</h2>
+                <strong class="info_tit tit">INFO</strong>
+                <ul class="info_des des">
+                  <li class="info">
+                    <span>반응형</span>으로 제작한 홈페이지입니다.
+                  </li>
+                  <li>react를 사용한 싱글페이지이며 서브페이지 모두 구현.</li>
+                  <li>data를 활용하여 페이지를 구성.</li>
+                  <li>검색기능 및 지도 이벤트 구현.</li>
                 </ul>
-            </nav>
-            <div class="bar_case">
-                <button class="btn_o serif">menu</button>
-            </div>
-        </header>
-        <main>
-            <div class="fullpageWrap">
-                <div class="animation">
-                    <svg width="940" height="203" viewBox="0 -60 940 10">
-                        <text>Irreplaceable</text>
-                    </svg>
+                <strong class="tool_tit tit">TOOLS</strong>
+                <ul class="tool_des des flex">
+                  <li>React</li>
+                  <li>axios</li>
+                  <li>gh-pages</li>
+                  <li>gsap</li>
+                  <li>react-icons</li>
+                  <li>react-router-dom</li>
+                  <li>react-slick</li>
+                  <li>sass</li>
+                  <li>styled-components</li>
+                </ul>
+                <strong class="work_tit tit">WORK</strong>
+                <p class="work_des des">개인작업 100%</p>
+                <button class="btn_o">
+                  <a
+                    href="https://pel1780.github.io/portfolio_react_public/"
+                    target="_blank"
+                    >VIEW</a
+                  >
+                </button>
+              </div>
+              <div class="tab_case">
+                <div class="em">
+                  <strong>React</strong>
+                  <strong>Responsive</strong>
                 </div>
-                <section class="section mainVisual">
-                    <div class="inner serif">
-                        <svg viewBox="0 190 720 20">
-                            <ellipse cx="360" cy="200" rx="360" ry="100" />
-                        </svg>
-                        <h2>Irreplaceable</h2>
-                        <strong>: 그 무엇으로도 대체[대신]할 수 없는</strong>
-                        <p>그 무엇으로도 대체 할 수 없는 퍼블리셔 김승하가 되겠습니다.</p>
-                        <a href="#pf01">next page</a>
+                <ul class="tab_menu flex">
+                  <li><button class="btn_o">web</button></li>
+                  <li><button class="btn_o">mobile</button></li>
+                </ul>
+                <ul class="tab_con">
+                  <li class="web">
+                    <div class="case">
+                      <img src="./img/busansights_web.png" alt="" />
                     </div>
-                </section>
-                <section class="section pfjavin portfolio">
-                    <div class="inner flex">
-                        <div class="desc_case">
-                            <h2 class="serif">Javin de Seoul</h2>
-                            <strong class="info_tit tit">INFO</strong>
-                            <ul class="info_des des">
-                                <li class="info"><span>반응형</span>으로 제작한 홈페이지입니다.</li>
-                                <li>react를 사용한 싱글페이지이며 서브페이지 모두 구현.</li>
-                                <li>data를 활용하여 페이지를 구성.</li>
-                                <li>장바구니 기능 가능.</li>
-                            </ul>
-                            <strong class="tool_tit tit">TOOLS</strong>
-                            <ul class="tool_des des flex">
-                                <li>React</li>
-                                <li>axios</li>
-                                <li>gh-pages</li>
-                                <li>gsap</li>
-                                <li>react-icons</li>
-                                <li>react-router-dom</li>
-                                <li>react-slick</li>
-                                <li>sass</li>
-                                <li>styled-components</li>
-                            </ul>
-                            <strong class="work_tit tit">WORK</strong>
-                            <p class="work_des des">개인작업 100%</p>
-                            <button class="btn_o">
-                                <a href="https://pel1780.github.io/portfolio_react_shop/" target="_blank">VIEW</a>
-                            </button>
-                        </div>
-                        <div class="tab_case">
-                            <div class="em">
-                                <strong>React</strong>
-                                <strong>Responsive</strong>
-                            </div>
-                            <ul class="tab_menu flex">
-                                <li><button class="btn_o">web</button></li>
-                                <li><button class="btn_o">mobile</button></li>
-                            </ul>
-                            <ul class="tab_con">
-                                <li class="web">
-                                    <div class="case"><img src="./img/javin_web.png" alt=""></div>
-                                </li>
-                                <li class="mo">
-                                    <div class="case">
-                                        <div class="logo">
-                                            <img src="./img/logo_javin.svg" alt="">
-                                        </div>
-                                        <ul class="flex">
-                                            <li class="detail01">
-                                                <img src="./img/javin_mo.png" alt="">
-                                            </li>
-                                            <li class="detail02">
-                                                <img src="./img/javin_mo.png" alt="">
-                                            </li>
-                                            <li class="detail03">
-                                                <img src="./img/javin_mo.png" alt="">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+                  </li>
+                  <li class="mo">
+                    <div class="case">
+                      <div class="logo">
+                        <img src="./img/logo_busansights.png" alt="" />
+                      </div>
+                      <ul class="flex">
+                        <li class="detail01">
+                          <img src="./img/busansights_mo.png" alt="" />
+                        </li>
+                        <li class="detail02">
+                          <img src="./img/busansights_mo.png" alt="" />
+                        </li>
+                        <li class="detail03">
+                          <img src="./img/busansights_mo.png" alt="" />
+                        </li>
+                      </ul>
                     </div>
-                </section>
-                <section class="section pfBando portfolio">
-                    <div class="inner flex">
-                        <div class="desc_case">
-                            <h2 class="serif">Bando</h2>
-                            <strong class="info_tit tit">INFO</strong>
-                            <ul class="info_des des">
-                                <li class="info"><span>반응형</span>으로 제작한 홈페이지입니다.</li>
-                                <li>그누보드를 사용한 멀티페이지이며 서브페이지 모두 구현.</li>
-                                <li>게시판을 활용하여 제작.</li>
-                            </ul>
-                            <strong class="tool_tit tit">TOOLS</strong>
-                            <ul class="tool_des des flex">
-                                <li>gnuBoard</li>
-                                <li>PHP</li>
-                                <li>MYSQL</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JS(j-Query)</li>
-                                <li>slick</li>
-                                <li>YTPlayer</li>
-                            </ul>
-                            <strong class="work_tit tit">WORK</strong>
-                            <p class="work_des des">개인작업 100%</p>
-                            <button class="btn_o">
-                                <a href="http://pel1780.dothome.co.kr/" target="_blank">VIEW</a>
-                            </button>
-                        </div>
-                        <div class="tab_case">
-                            <div class="em">
-                                <strong>Gnuboard</strong>
-                                <strong>Responsive</strong>
-                            </div>
-                            <ul class="tab_menu flex">
-                                <li><button class="btn_o">web</button></li>
-                                <li><button class="btn_o">mobile</button></li>
-                            </ul>
-                            <ul class="tab_con">
-                                <li class="web">
-                                    <div class="case"><img src="./img/bando_web.png" alt=""></div>
-
-                                </li>
-                                <li class="mo">
-                                    <div class="case">
-                                        <div class="logo">
-                                            <img src="./img/logo_bando.png" alt="">
-                                        </div>
-                                        <ul class="flex">
-                                            <li class="detail01">
-                                                <img src="./img/bando_mo.png" alt="">
-                                            </li>
-                                            <li class="detail02">
-                                                <img src="./img/bando_mo.png" alt="">
-                                            </li>
-                                            <li class="detail03">
-                                                <img src="./img/bando_mo.png" alt="">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="section pfRerave portfolio">
-                    <div class="inner flex">
-                        <div class="desc_case">
-                            <h2 class="serif">Rerave</h2>
-                            <strong class="info_tit tit">INFO</strong>
-                            <ul class="info_des des">
-                                <li class="info"><span>반응형</span>으로 제작한 홈페이지입니다.</li>
-                                <li>그누보드를 사용한 멀티페이지이며 서브페이지 모두 구현.</li>
-                                <li>j-Query 사용해 다양한 이벤트를 실행.</li>
-                            </ul>
-                            <strong class="tool_tit tit">TOOLS</strong>
-                            <ul class="tool_des des flex">
-                                <li>gnuBoard</li>
-                                <li>PHP</li>
-                                <li>MYSQL</li>
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JS(j-Query)</li>
-                                <li>slick</li>
-                            </ul>
-                            <strong class="work_tit tit">WORK</strong>
-                            <p class="work_des des">개인작업 100%</p>
-                            <button class="btn_o">
-                                <a href="http://pel17800.dothome.co.kr" target="_blank">VIEW</a>
-                            </button>
-                        </div>
-                        <div class="tab_case">
-                            <div class="em">
-                                <strong>Gnuboard</strong>
-                                <strong>Responsive</strong>
-                            </div>
-                            <ul class="tab_menu flex">
-                                <li><button class="btn_o">web</button></li>
-                                <li><button class="btn_o">mobile</button></li>
-                            </ul>
-                            <ul class="tab_con">
-                                <li class="web">
-                                    <div class="case"><img src="./img/rerave_web.png" alt=""></div>
-
-                                </li>
-                                <li class="mo">
-                                    <div class="case">
-                                        <div class="logo">
-                                            <img src="./img/logo_rerave.svg" alt="">
-                                        </div>
-                                        <ul class="flex">
-                                            <li class="detail01">
-                                                <img src="./img/rerave_mo.png" alt="">
-                                            </li>
-                                            <li class="detail02">
-                                                <img src="./img/rerave_mo.png" alt="">
-                                            </li>
-                                            <li class="detail03">
-                                                <img src="./img/rerave_mo.png" alt="">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="section pfBanyan portfolio">
-                    <div class="inner flex">
-                        <div class="desc_case">
-                            <h2 class="serif">Banyantree Hotel</h2>
-                            <strong class="info_tit tit">INFO</strong>
-                            <ul class="info_des des">
-                                <li class="info"><span>반응형</span>으로 제작한 홈페이지입니다.</li>
-                                <li>css(position: sticky, animation)를 이용하여 동적인 움직임을 구현.</li>
-                                <li>j-Qury 사용해 다양한 이벤트를 실행.</li>
-                            </ul>
-                            <strong class="tool_tit tit">TOOLS</strong>
-                            <ul class="tool_des des flex">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JS(j-Query)</li>
-                                <li>slick</li>
-                            </ul>
-                            <strong class="work_tit tit">WORK</strong>
-                            <p class="work_des des">개인작업 100%</p>
-                            <button class="btn_o">
-                                <a href="https://pel1780.github.io/portfolio04" target="_blank">VIEW</a>
-                            </button>
-                        </div>
-                        <div class="tab_case">
-                            <div class="em">
-                                <strong>Responsive</strong>
-                            </div>
-                            <ul class="tab_menu flex">
-                                <li><button class="btn_o">web</button></li>
-                                <li><button class="btn_o">mobile</button></li>
-                            </ul>
-                            <ul class="tab_con">
-                                <li class="web">
-                                    <div class="case"><img src="./img/banyantree_web.png" alt=""></div>
-                                </li>
-                                <li class="mo">
-                                    <div class="case">
-                                        <div class="logo">
-                                            <img src="./img/logo_banyantree.png" alt="">
-                                        </div>
-                                        <ul class="flex">
-                                            <li class="detail01">
-                                                <img src="./img/banyantree_mo.png" alt="">
-                                            </li>
-                                            <li class="detail02">
-                                                <img src="./img/banyantree_mo.png" alt="">
-                                            </li>
-                                            <li class="detail03">
-                                                <img src="./img/banyantree_mo.png" alt="">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="section pfThem portfolio">
-                    <div class="inner flex">
-                        <div class="desc_case">
-                            <em>portfolio : responsive</em>
-                            <h2 class="serif">The M Graphy</h2>
-                            <strong class="info_tit tit">INFO</strong>
-                            <ul class="info_des des">
-                                <li class="info"><span>반응형</span>으로 제작한 홈페이지입니다.</li>
-                                <li>slide와 tab을 묶어 제작하여 다양한 이미지 노출.</li>
-                                <li>slick 메소드를 활용해 slide controller 제작.</li>
-                            </ul>
-                            <strong class="tool_tit tit">TOOLS</strong>
-                            <ul class="tool_des des flex">
-                                <li>HTML5</li>
-                                <li>CSS3</li>
-                                <li>JS(j-Query)</li>
-                                <li>slick</li>
-                            </ul>
-                            <strong class="work_tit tit">WORK</strong>
-                            <p class="work_des des">개인작업 100%</p>
-                            <button class="btn_o">
-                                <a href="https://pel1780.github.io/portfolio06" target="_blank">VIEW</a>
-                            </button>
-                        </div>
-                        <div class="tab_case">
-                            <div class="em">
-                                <strong>Responsive</strong>
-                            </div>
-                            <ul class="tab_menu flex">
-                                <li><button class="btn_o">web</button></li>
-                                <li><button class="btn_o">mobile</button></li>
-                            </ul>
-                            <ul class="tab_con">
-                                <li class="web">
-                                    <div class="case"><img src="./img/them_web.png" alt=""></div>
-                                </li>
-                                <li class="mo">
-                                    <div class="case">
-                                        <div class="logo">
-                                            <img src="./img/logo_them.png" alt="">
-                                        </div>
-                                        <ul class="flex">
-                                            <li class="detail01">
-                                                <img src="./img/them_mo.png" alt="">
-                                            </li>
-                                            <li class="detail02">
-                                                <img src="./img/them_mo.png" alt="">
-                                            </li>
-                                            <li class="detail03">
-                                                <img src="./img/them_mo.png" alt="">
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-                <section class="section contact">
-                    <div class="inner serif">
-                        <h2 class="serif">Contact</h2>
-                        <ul class="flex">
-                            <li>name : 김승하 / Kim SeungHa</li>
-                            <li><a href="tel:010-7244-6377">tel : 010-7244-6377</a></li>
-                            <li><a href="mailto:pel1780@naver.com">email : pel1780@naver.com</a></li>
-                            <li>skills : HTML, CSS, JavaScript, j-Query, figma, React, github</li>
-                            <li>web : <a href="https://github.com/pel1780">pel1780.github.io</a></li>
-                        </ul>
-                        <strong>꾸준하고 묵묵히, 부족한 점들 조차도 단단하게 채워 회사의 완벽에 가까운 값진 결과가 되겠습니다.</strong>
-                    </div>
-                </section>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </main>
-        <footer class="footer">
-            &copy; Kim SeungHa 2023
-        </footer>
+          </section>
+          <section class="section pfjavin portfolio">
+            <div class="inner flex">
+              <div class="desc_case">
+                <h2 class="serif">Javin de Seoul</h2>
+                <strong class="info_tit tit">INFO</strong>
+                <ul class="info_des des">
+                  <li class="info">
+                    <span>반응형</span>으로 제작한 홈페이지입니다.
+                  </li>
+                  <li>react를 사용한 싱글페이지이며 서브페이지 모두 구현.</li>
+                  <li>data를 활용하여 페이지를 구성.</li>
+                  <li>장바구니 기능 가능.</li>
+                </ul>
+                <strong class="tool_tit tit">TOOLS</strong>
+                <ul class="tool_des des flex">
+                  <li>React</li>
+                  <li>axios</li>
+                  <li>gh-pages</li>
+                  <li>gsap</li>
+                  <li>react-icons</li>
+                  <li>react-router-dom</li>
+                  <li>react-slick</li>
+                  <li>sass</li>
+                  <li>styled-components</li>
+                </ul>
+                <strong class="work_tit tit">WORK</strong>
+                <p class="work_des des">개인작업 100%</p>
+                <button class="btn_o">
+                  <a
+                    href="https://pel1780.github.io/portfolio_react_shop/"
+                    target="_blank"
+                    >VIEW</a
+                  >
+                </button>
+              </div>
+              <div class="tab_case">
+                <div class="em">
+                  <strong>React</strong>
+                  <strong>Responsive</strong>
+                </div>
+                <ul class="tab_menu flex">
+                  <li><button class="btn_o">web</button></li>
+                  <li><button class="btn_o">mobile</button></li>
+                </ul>
+                <ul class="tab_con">
+                  <li class="web">
+                    <div class="case">
+                      <img src="./img/javin_web.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="mo">
+                    <div class="case">
+                      <div class="logo">
+                        <img src="./img/logo_javin.svg" alt="" />
+                      </div>
+                      <ul class="flex">
+                        <li class="detail01">
+                          <img src="./img/javin_mo.png" alt="" />
+                        </li>
+                        <li class="detail02">
+                          <img src="./img/javin_mo.png" alt="" />
+                        </li>
+                        <li class="detail03">
+                          <img src="./img/javin_mo.png" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="section pfBando portfolio">
+            <div class="inner flex">
+              <div class="desc_case">
+                <h2 class="serif">Bando</h2>
+                <strong class="info_tit tit">INFO</strong>
+                <ul class="info_des des">
+                  <li class="info">
+                    <span>반응형</span>으로 제작한 홈페이지입니다.
+                  </li>
+                  <li>
+                    그누보드를 사용한 멀티페이지이며 서브페이지 모두 구현.
+                  </li>
+                  <li>게시판을 활용하여 제작.</li>
+                </ul>
+                <strong class="tool_tit tit">TOOLS</strong>
+                <ul class="tool_des des flex">
+                  <li>gnuBoard</li>
+                  <li>PHP</li>
+                  <li>MYSQL</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JS(j-Query)</li>
+                  <li>slick</li>
+                  <li>YTPlayer</li>
+                </ul>
+                <strong class="work_tit tit">WORK</strong>
+                <p class="work_des des">개인작업 100%</p>
+                <button class="btn_o">
+                  <a href="http://pel1780.dothome.co.kr/" target="_blank"
+                    >VIEW</a
+                  >
+                </button>
+              </div>
+              <div class="tab_case">
+                <div class="em">
+                  <strong>Gnuboard</strong>
+                  <strong>Responsive</strong>
+                </div>
+                <ul class="tab_menu flex">
+                  <li><button class="btn_o">web</button></li>
+                  <li><button class="btn_o">mobile</button></li>
+                </ul>
+                <ul class="tab_con">
+                  <li class="web">
+                    <div class="case">
+                      <img src="./img/bando_web.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="mo">
+                    <div class="case">
+                      <div class="logo">
+                        <img src="./img/logo_bando.png" alt="" />
+                      </div>
+                      <ul class="flex">
+                        <li class="detail01">
+                          <img src="./img/bando_mo.png" alt="" />
+                        </li>
+                        <li class="detail02">
+                          <img src="./img/bando_mo.png" alt="" />
+                        </li>
+                        <li class="detail03">
+                          <img src="./img/bando_mo.png" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="section pfRerave portfolio">
+            <div class="inner flex">
+              <div class="desc_case">
+                <h2 class="serif">Rerave</h2>
+                <strong class="info_tit tit">INFO</strong>
+                <ul class="info_des des">
+                  <li class="info">
+                    <span>반응형</span>으로 제작한 홈페이지입니다.
+                  </li>
+                  <li>
+                    그누보드를 사용한 멀티페이지이며 서브페이지 모두 구현.
+                  </li>
+                  <li>j-Query 사용해 다양한 이벤트를 실행.</li>
+                </ul>
+                <strong class="tool_tit tit">TOOLS</strong>
+                <ul class="tool_des des flex">
+                  <li>gnuBoard</li>
+                  <li>PHP</li>
+                  <li>MYSQL</li>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JS(j-Query)</li>
+                  <li>slick</li>
+                </ul>
+                <strong class="work_tit tit">WORK</strong>
+                <p class="work_des des">개인작업 100%</p>
+                <button class="btn_o">
+                  <a href="http://pel17800.dothome.co.kr" target="_blank"
+                    >VIEW</a
+                  >
+                </button>
+              </div>
+              <div class="tab_case">
+                <div class="em">
+                  <strong>Gnuboard</strong>
+                  <strong>Responsive</strong>
+                </div>
+                <ul class="tab_menu flex">
+                  <li><button class="btn_o">web</button></li>
+                  <li><button class="btn_o">mobile</button></li>
+                </ul>
+                <ul class="tab_con">
+                  <li class="web">
+                    <div class="case">
+                      <img src="./img/rerave_web.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="mo">
+                    <div class="case">
+                      <div class="logo">
+                        <img src="./img/logo_rerave.svg" alt="" />
+                      </div>
+                      <ul class="flex">
+                        <li class="detail01">
+                          <img src="./img/rerave_mo.png" alt="" />
+                        </li>
+                        <li class="detail02">
+                          <img src="./img/rerave_mo.png" alt="" />
+                        </li>
+                        <li class="detail03">
+                          <img src="./img/rerave_mo.png" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="section pfBanyan portfolio">
+            <div class="inner flex">
+              <div class="desc_case">
+                <h2 class="serif">Banyantree Hotel</h2>
+                <strong class="info_tit tit">INFO</strong>
+                <ul class="info_des des">
+                  <li class="info">
+                    <span>반응형</span>으로 제작한 홈페이지입니다.
+                  </li>
+                  <li>
+                    css(position: sticky, animation)를 이용하여 동적인 움직임을
+                    구현.
+                  </li>
+                  <li>j-Qury 사용해 다양한 이벤트를 실행.</li>
+                </ul>
+                <strong class="tool_tit tit">TOOLS</strong>
+                <ul class="tool_des des flex">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JS(j-Query)</li>
+                  <li>slick</li>
+                </ul>
+                <strong class="work_tit tit">WORK</strong>
+                <p class="work_des des">개인작업 100%</p>
+                <button class="btn_o">
+                  <a
+                    href="https://pel1780.github.io/portfolio04"
+                    target="_blank"
+                    >VIEW</a
+                  >
+                </button>
+              </div>
+              <div class="tab_case">
+                <div class="em">
+                  <strong>Responsive</strong>
+                </div>
+                <ul class="tab_menu flex">
+                  <li><button class="btn_o">web</button></li>
+                  <li><button class="btn_o">mobile</button></li>
+                </ul>
+                <ul class="tab_con">
+                  <li class="web">
+                    <div class="case">
+                      <img src="./img/banyantree_web.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="mo">
+                    <div class="case">
+                      <div class="logo">
+                        <img src="./img/logo_banyantree.png" alt="" />
+                      </div>
+                      <ul class="flex">
+                        <li class="detail01">
+                          <img src="./img/banyantree_mo.png" alt="" />
+                        </li>
+                        <li class="detail02">
+                          <img src="./img/banyantree_mo.png" alt="" />
+                        </li>
+                        <li class="detail03">
+                          <img src="./img/banyantree_mo.png" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="section pfThem portfolio">
+            <div class="inner flex">
+              <div class="desc_case">
+                <em>portfolio : responsive</em>
+                <h2 class="serif">The M Graphy</h2>
+                <strong class="info_tit tit">INFO</strong>
+                <ul class="info_des des">
+                  <li class="info">
+                    <span>반응형</span>으로 제작한 홈페이지입니다.
+                  </li>
+                  <li>slide와 tab을 묶어 제작하여 다양한 이미지 노출.</li>
+                  <li>slick 메소드를 활용해 slide controller 제작.</li>
+                </ul>
+                <strong class="tool_tit tit">TOOLS</strong>
+                <ul class="tool_des des flex">
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JS(j-Query)</li>
+                  <li>slick</li>
+                </ul>
+                <strong class="work_tit tit">WORK</strong>
+                <p class="work_des des">개인작업 100%</p>
+                <button class="btn_o">
+                  <a
+                    href="https://pel1780.github.io/portfolio06"
+                    target="_blank"
+                    >VIEW</a
+                  >
+                </button>
+              </div>
+              <div class="tab_case">
+                <div class="em">
+                  <strong>Responsive</strong>
+                </div>
+                <ul class="tab_menu flex">
+                  <li><button class="btn_o">web</button></li>
+                  <li><button class="btn_o">mobile</button></li>
+                </ul>
+                <ul class="tab_con">
+                  <li class="web">
+                    <div class="case">
+                      <img src="./img/them_web.png" alt="" />
+                    </div>
+                  </li>
+                  <li class="mo">
+                    <div class="case">
+                      <div class="logo">
+                        <img src="./img/logo_them.png" alt="" />
+                      </div>
+                      <ul class="flex">
+                        <li class="detail01">
+                          <img src="./img/them_mo.png" alt="" />
+                        </li>
+                        <li class="detail02">
+                          <img src="./img/them_mo.png" alt="" />
+                        </li>
+                        <li class="detail03">
+                          <img src="./img/them_mo.png" alt="" />
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="section contact">
+            <div class="inner serif">
+              <h2 class="serif">Contact</h2>
+              <ul class="flex">
+                <li>name : 김승하 / Kim SeungHa</li>
+                <li><a href="tel:010-7244-6377">tel : 010-7244-6377</a></li>
+                <li>
+                  <a href="mailto:pel1780@naver.com"
+                    >email : pel1780@naver.com</a
+                  >
+                </li>
+                <li>
+                  skills : HTML, CSS, JavaScript, j-Query, figma, React, github
+                </li>
+                <li>
+                  web :
+                  <a href="https://github.com/pel1780">pel1780.github.io</a>
+                </li>
+              </ul>
+              <strong
+                >꾸준하고 묵묵히, 부족한 점들 조차도 단단하게 채워 회사의 완벽에
+                가까운 값진 결과가 되겠습니다.</strong
+              >
+            </div>
+          </section>
+        </div>
+      </main>
+      <footer class="footer">&copy; Kim SeungHa 2023</footer>
     </div>
-</body>
-
+  </body>
 </html>
